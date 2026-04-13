@@ -1,8 +1,17 @@
 #!/bin/bash
-sudo systemctl stop packagekit
-sudo rm -f /var/lib/PackageKit/transactions.db
-sudo systemctl start packagekit
-sudo rm -rf ~/.cache/discover
-pkcon refresh force
-echo "Готово! Discover должен работать."
+# discover-proxy-fix.sh - исправление ошибки Discover после удаления прокси
 
+echo "Исправление Discover (PackageKit)..."
+
+pkexec bash -c '
+    echo "Останавливаю packagekit..."
+    systemctl stop packagekit
+    
+    echo "Удаляю базы данных..."
+    rm -rf /var/lib/PackageKit /var/cache/PackageKit
+    
+    echo "Запускаю packagekit..."
+    systemctl start packagekit
+'
+
+echo "Готово."
