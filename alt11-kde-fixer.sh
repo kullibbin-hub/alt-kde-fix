@@ -16,7 +16,7 @@ pkexec bash -c "
     apt-get update -y
     apt-get dist-upgrade -y
 
-    apt-get -y install sudo synaptic-usermode epmgpi eepm-play-gui gearlever android-tools pipewire-jack spruce git skanlite flatpak flatpak-repo-flathub firsttime-flatpak-mask-openh264 flatpak-kcm plasma-discover-flatpak print-manager sane-airscan airsane gnome-disk-utility icon-theme-Papirus xdg-desktop-portal-gtk net-snmp kcm-grub2 kaccounts-providers avahi-daemon avahi-tools ffmpegthumbnailer mediainfo samba-usershares kdeconnect kamoso kio-admin
+    apt-get -y install sudo synaptic-usermode epmgpi eepm-play-gui gearlever android-tools pipewire-jack spruce git skanlite flatpak flatpak-repo-flathub firsttime-flatpak-mask-openh264 flatpak-kcm plasma-discover-flatpak print-manager sane-airscan airsane gnome-disk-utility icon-theme-Papirus xdg-desktop-portal-gtk net-snmp kcm-grub2 kaccounts-providers avahi-daemon avahi-tools ffmpegthumbnailer mediainfo samba-usershares kdeconnect kamoso kio-admin hplip-gui
 
     echo 'Включаю wheel для sudo...'
     control sudowheel enabled
