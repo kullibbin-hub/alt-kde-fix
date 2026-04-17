@@ -16,7 +16,7 @@ pkexec bash -c "
     apt-get update -y
     apt-get dist-upgrade -y
 
-    apt-get -y install sudo synaptic-usermode epmgpi eepm-play-gui gearlever android-tools pipewire-jack spruce git skanlite flatpak flatpak-repo-flathub firsttime-flatpak-mask-openh264 flatpak-kcm plasma-discover-flatpak print-manager sane-airscan airsane gnome-disk-utility icon-theme-Papirus xdg-desktop-portal-gtk net-snmp kcm-grub2 kaccounts-providers avahi-daemon avahi-tools ffmpegthumbnailer mediainfo samba-usershares kdeconnect kamoso kio-admin hplip-gui
+    apt-get -y install sudo synaptic-usermode epmgpi eepm-play-gui gearlever android-tools pipewire-jack spruce git skanlite flatpak flatpak-repo-flathub firsttime-flatpak-mask-openh264 flatpak-kcm plasma-discover-flatpak print-manager sane-airscan airsane gnome-disk-utility icon-theme-Papirus xdg-desktop-portal-gtk net-snmp kcm-grub2 kaccounts-providers avahi-daemon avahi-tools ffmpegthumbnailer mediainfo samba-usershares kdeconnect kamoso kio-admin
 
     echo 'Включаю wheel для sudo...'
     control sudowheel enabled
@@ -25,6 +25,7 @@ pkexec bash -c "
     usermod -aG wheel '$REAL_USER'
     usermod -a -G dialout '$REAL_USER'
     usermod -a -G lp '$REAL_USER'
+    usermod -a -G adbusers '$REAL_USER'
 
     echo 'Root-часть выполнена.'
 "
@@ -226,7 +227,7 @@ echo -e  '\e[33m
 настройка - настроить Dolphin - вкладка "Миниатюры", там поставьте нужные галочки
 на нужных типах файлов, можно на всех.
 
-Теперь желательно перезагрузить компьютер.
+Теперь необходимо перезагрузить компьютер.
 \e[0m'
 
 
