@@ -1,5 +1,8 @@
 # alt-kde-fix
 
+!!!!! Проект заморожен. Развитие проекта тут: https://github.com/kullibbin-hub/alt-kde-helper/tree/main !!!!!!
+
+
 Скрипты для Alt Linux 11 на KDE, предназначенные для включения отключенного функционала, настройки sudo, доустановки компонентов (для версии Starterkit) и других улучшений.
 
 > **Назначение:** Alt Linux 11 Kworkstation и Starterkit, KDE, домашнее (некоммерческое) использование.
